@@ -6,5 +6,13 @@ const jobSelect = document.querySelector("#job");
 const messageTextarea = document.querySelector("#message");
 
 form.addEventListener("submit", (event) => {
-    eve"
-})
+    event.preventDefault();
+
+    // Verifica se o nome está vazio
+
+    if(nameInput.value === "") {
+        alert("Por favor, preencha o seu nome")
+        return;
+    }
+
+});
