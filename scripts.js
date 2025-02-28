@@ -5,4 +5,6 @@ const passwordInput = document.querySelector("password");
 const jobSelect = document.querySelector("#job");
 const messageTextarea = document.querySelector("#message");
 
-form.addEventListener("submit")
+form.addEventListener("submit", (event) => {
+    eve"
+})
