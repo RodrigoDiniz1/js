@@ -1,7 +1,7 @@
 const form = document.querySelector("#form");
 const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
-const passwordInput = document.querySelector("password");
+const passwordInput = document.querySelector("#password");
 const jobSelect = document.querySelector("#job");
 const messageTextarea = document.querySelector("#message");
 
@@ -22,8 +22,8 @@ form.addEventListener("submit", (event) => {
     }
 
 
-    // verifica se a senha 
-    if(validatePassword()) {
+    // verifica se a senha está preenchida
+    if(!validatePassword(passwordInput.value, 8)) {
         alert("A senha precisa de no mínimo 8 digitos")
         return;
     }
