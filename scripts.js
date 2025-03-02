@@ -28,6 +28,23 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
+
+    // verifica se a situação foi selcionada
+    if (jobSelect.value ==="") {
+        alert("Por favor, selecione sua situação de trabalho.")
+        return;
+    }
+
+
+    // verifica se a mensagem está preenchida
+    if (messageTextarea.value === "") {
+        alert("Por favor, escreva uma mensagem");
+        return;
+    }
+
+
+
+
     //Se todos os campos estiverem corretamente preenchidos, envie o form
 
     form.submit();
