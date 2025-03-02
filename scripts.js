@@ -18,9 +18,15 @@ form.addEventListener("submit", (event) => {
     // verifica se o e-mail está preenchido e se é válido
     if(emailInput.value === "" || !isEmailValid(emailInput.value)) {
         alert("Por favor, preencha o seu e-mail")
-        return
+        return;
     }
 
+
+    // verifica se a senha 
+    if(validatePassword()) {
+        alert("A senha precisa de no mínimo 8 digitos")
+        return;
+    }
 
     //Se todos os campos estiverem corretamente preenchidos, envie o form
 
