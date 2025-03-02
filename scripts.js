@@ -41,3 +41,16 @@ if(emailRegex.test(email)) {
 
 return false;
 }
+
+// Função que valida a senha
+function validatePassword(password, minDigits){
+    if(password.length >= minDigits) {
+
+        //senha válida
+        return true
+    }
+
+    //senha inválida
+    return false
+
+}
